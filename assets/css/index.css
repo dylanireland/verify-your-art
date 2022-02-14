@@ -1,0 +1,66 @@
+/* INFORMATOR */
+
+#informator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 10vh;
+  width: 60%;
+}
+
+#informator h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+#informator h3 {
+  margin: 0;
+  margin-top: 2vh;
+}
+
+#informator > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* SHOWOFF */
+
+#showoff {
+  width: 100%;
+  margin-top: 8vh;
+}
+
+#showoff #nfts {
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+#showoff .arrow {
+  width: 12%;
+}
+
+#showoff .arrow img {
+  width: 100%;
+}
+
+#showoff #buttons {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+#showoff #buttons .button:first-child {
+  margin-right: 12px;
+}
+
+#showoff #buttons .button:last-child {
+  margin-left: 12px;
+}
+
+#showoff .button {
+
+}

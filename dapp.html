@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verify Your Art - App</title>
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/dapp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://auth.magic.link/sdk"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+</head>
+
+<body>
+  <div id="walletConnectModal">
+    <div id="modal">
+      <div class="left">
+        <img src="assets/photos/metamask-sans.svg">
+        <h3>MetaMask</h3>
+      </div>
+
+      <div class="right">
+        <img src="assets/photos/magic-sans.svg">
+        <h3>Magic</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="interactable">
+    <div>
+      <img id="image" src="assets/photos/default.svg">
+      <button class="button" id="actionbutton">Connect Wallet</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <p>&copy; VerifyYourArt 2022</p>
+      <div class="links">
+        <a><img src="assets/photos/github.svg"></a>
+        <a><img src="assets/photos/etherscan.svg"></a>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/ethers.js"></script>
+  <script src="assets/js/dapp.js"></script>
+</body>
+
+</html>
