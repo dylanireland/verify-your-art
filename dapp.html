@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://auth.magic.link/sdk"></script>
   <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
 </head>
@@ -14,12 +15,12 @@
 <body>
   <div id="walletConnectModal">
     <div id="modal">
-      <div class="left">
+      <div id="metamaskButton">
         <img src="assets/photos/metamask-sans.svg">
         <h3>MetaMask</h3>
       </div>
 
-      <div class="right">
+      <div id="magicButton">
         <img src="assets/photos/magic-sans.svg">
         <h3>Magic</h3>
       </div>
@@ -29,7 +30,10 @@
   <div id="interactable">
     <div>
       <img id="image" src="assets/photos/default.svg">
-      <button class="button" id="actionbutton">Connect Wallet</button>
+      <form action="javascript:actionRouting();">
+        <input class="button" id="actionbutton" type="submit" value="Connect Wallet">
+        <input id="uploadfilebutton" accept=".png,.jpg,.jpeg,.gif,.tiff,.bmp" type="file" onchange="placeImage(this);">
+      </form>
     </div>
   </div>
 

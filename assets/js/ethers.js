@@ -21,9 +21,9 @@ async function getAccounts() {
   }
 }
 
-async function getMagic() {
+async function getMagic(email) {
   try {
-    await m.auth.loginWithMagicLink({ email: 'dylan.ireland777@gmail.com' });
+    await m.auth.loginWithMagicLink({ email: email });
   } catch (error) {
     console.log("Magic error: " + error);
   }
